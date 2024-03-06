@@ -44,3 +44,14 @@
     Заказ успешно создан
   actual-result: |
     500 Internal Server Error
+
+- summary: |
+    Ошибка отображения всех товаров в каталоге
+  environment: |
+    created by Hexlet version 1, Google Chrome Версия 121.0.6167.140, (64 бит) Windows 10
+  steps-to-reproduce: |
+    - Убрать галочку с чек-бокса 'In Stock'
+  expected-result: |
+    Успешно отображены товары, которые есть и которых нет в наличии
+  actual-result: |
+    Товары не найдены
