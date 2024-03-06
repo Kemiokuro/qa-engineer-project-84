@@ -31,3 +31,16 @@
     У пользователя должны корректно отображаться элементы 
   actual-result: |
     В мобильной версии интернет-магазина отсутствует адаптивная верстка
+
+- summary: |
+    Внутренняя ошибка сервера при оформлении заказа
+  environment: |
+    created by Hexlet version 1, Google Chrome Версия 121.0.6167.140, (64 бит) Windows 10
+  steps-to-reproduce: |
+    - На любой карточке товара нажать кнопку 'Add to cart'
+    - Перейти в корзину нажав на кнопку 'Cart'
+    - Нажать на кнопку 'Checkout'
+  expected-result: |
+    Заказ успешно создан
+  actual-result: |
+    500 Internal Server Error
