@@ -6,46 +6,50 @@
     Поиск товара от одного символа
   status: pass
 
-    - summary: |
+  - summary: |
     Поиск товара по категориям
   status: pass
 
-    - summary: |
+  - summary: |
     Сброс категории на значение по умолчанию
   status: fail
 
-    - summary: |
+  - summary: |
     Сортировка товара по цене
   status: pass
 
-      - summary: |
+  - summary: |
      Фильтрация товара по бренду
   status: pass
 
-      - summary: |
+  - summary: |
     Фильтрация товара по отсутствию наличия в магазине
   status: pass
 
-      - summary: |
+  - summary: |
     Просмотр подробной информации о товаре в карточке
   status: pass
 
-      - summary: |
+  - summary: |
     Возможность просматривать список товаров
   status: pass
 
-      - summary: |
+  - summary: |
     Добавление и просмотр товара в корзине
   status: pass
 
-        - summary: |
+  - summary: |
     Удаление товара из корзины
   status: pass
 
-        - summary: |
+  - summary: |
     Проверка отображения мобильной версии сайта
   status: fail
 
-        - summary: |
+  - summary: |
     Проверка локализации
   status: pass
+
+  - summary: |
+    Отображение иконки английской локализации в выпадающем меню смены языка
+  status: fail
