@@ -1,0 +1,110 @@
+  test-cases:
+  - summary: |
+      Поиск товара по ключевому слову
+    status: pass
+
+  test-cases:
+  - summary: |
+      Поиск товара от одного символа
+    status: pass
+
+  test-cases:
+  - summary: |
+      Поиск товара по категориям
+    status: pass
+
+  test-cases:
+  - summary: |
+      Сброс категории на значение по умолчанию
+    status: fail
+    
+   test-cases:
+  - summary: |
+      Сортировка товара по цене
+    status: pass
+
+  test-cases:
+  - summary: |
+      Фильтрация товара по бренду
+    status: pass
+
+  test-cases:
+  - summary: |
+      Фильтрация товара по отсутствию наличия в магазине
+    status: fail
+
+  test-cases:
+  - summary: |
+      Просмотр подробной информации о товаре в карточке
+    status: pass
+
+  test-cases:
+  - summary: |
+      Возможность просматривать список товаров
+    status: pass
+
+  test-cases:
+  - summary: |
+      Добавление и просмотр товара в корзине
+    status: pass
+    
+  test-cases:
+  - summary: |
+      Удаление товара из корзины
+    status: pass
+    
+  test-cases:
+  - summary: |
+      Проверка отображения мобильной версии сайта
+    status: pass
+    
+  test-cases:
+  - summary: |
+      Проверка локализации
+    status: pass
+
+  test-cases:
+  - summary: |
+      Отображение иконки английской локализации в выпадающем меню смены языка
+    status: pass
+
+    bugreports:
+  - summary: |
+      При выборе фильтра 'по умолчанию' не работает вся остальная фильтрация
+    environment: |
+      created by Hexlet version 2, Google Chrome Версия 121.0.6167.140, (64 бит) Windows 10
+    steps-to-reproduce: |
+      - Зайти на сайт интернет-магазина https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      - Нажать на выпадающее меню 'Category' и выбрать пустую строку
+    expected-result: |
+      Фильтрация по категории сброшена на 'по умолчанию', последущая фильтрация по 'Brand', 'Categoty', 'Search' и 'Price' работает корректно
+    actual-result: |
+      Фильтрация по категории сброшена на 'по умолчанию', последущая фильтрация по 'Brand', 'Categoty', 'Search' и 'Price' не работает
+
+    bugreports:
+  - summary: |
+      Фильтрация товара по отсутствию наличия в магазине
+    environment: |
+      created by Hexlet version 2, Google Chrome Версия 121.0.6167.140, (64 бит) Windows 10
+    steps-to-reproduce: |
+      - Зайти на сайт интернет-магазина https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      - Нажать на чек-бокс 'In Stock'
+      - Нажать на выпадающее окно 'laptops'
+      - В блоке 'Brand' выбрать 'Apple'
+      expected-result: |
+      Должен отобразиться товар по выбранной фильтрации 'Brand', 'Categoty', 'Search' и 'Price'
+    actual-result: |
+      Фильтрация по выбраным 'Brand', 'Categoty', 'Search' и 'Price' не работает
+
+    bugreports:
+  - summary: |
+     При выборе категории карточка товара отображается некорректно
+    environment: |
+      created by Hexlet version 2, Google Chrome Версия 121.0.6167.140, (64 бит) Windows 10
+    steps-to-reproduce: |
+      - Зайти на сайт интернет-магазина https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      - В блоке 'Brand' выбрать 'OPPO'
+      expected-result: |
+      Цена и кнопка 'Add to cart' не выходят за границы карточки товара, карточка товара отображается единнобразно
+    actual-result: |
+      Цена и кнопка 'Add to cart' выходят за границы карточки товара, карточка товара смещена
