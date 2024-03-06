@@ -62,7 +62,6 @@ bugreports:
     environment: |
       created by Hexlet version 2, Google Chrome Версия 121.0.6167.140, (64 бит) Windows 10
     steps-to-reproduce: |
-      - Зайти на сайт интернет-магазина https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       - Нажать на выпадающее меню 'Category' и выбрать пустую строку
     expected-result: |
       Фильтрация по категории сброшена на 'по умолчанию', последущая фильтрация по 'Brand', 'Categoty', 'Search' и 'Price' работает корректно
@@ -74,7 +73,6 @@ bugreports:
     environment: |
       created by Hexlet version 2, Google Chrome Версия 121.0.6167.140, (64 бит) Windows 10
     steps-to-reproduce: |
-      - Зайти на сайт интернет-магазина https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       - Нажать на чек-бокс 'In Stock'
       - Нажать на выпадающее окно 'laptops'
       - В блоке 'Brand' выбрать 'Apple'
@@ -88,7 +86,6 @@ bugreports:
     environment: |
       created by Hexlet version 2, Google Chrome Версия 121.0.6167.140, (64 бит) Windows 10
     steps-to-reproduce: |
-      - Зайти на сайт интернет-магазина https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       - В блоке 'Brand' выбрать 'OPPO'
       expected-result: |
       Цена и кнопка 'Add to cart' не выходят за границы карточки товара, карточка товара отображается единнобразно
