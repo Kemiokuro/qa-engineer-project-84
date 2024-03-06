@@ -3,7 +3,6 @@
   environment: |
     created by Hexlet version 1, Google Chrome Версия 121.0.6167.140, (64 бит) Windows 10
   steps-to-reproduce: |
-    - Зайти на сайт интернет-магазина https://hexlet-products-store.vercel.app/
     - Нажать на кнопку 'Category'
     - Выбрать любой пункт в контекстном меню
   expected-result: |
@@ -12,23 +11,21 @@
     При выборе категории нельзя вернуть отображение товаров по всем категориям
 
 - summary: |
-    Некорректное отображение иконки английской локализации в выпадающем меню смены языка
+    Не отображается иконка флага у английской локали в меню языка
   environment: |
     created by Hexlet version 1, Google Chrome Версия 121.0.6167.140, (64 бит) Windows 10
   steps-to-reproduce: |
-    - Зайти на сайт интернет-магазина https://hexlet-products-store.vercel.app/
     - Нажать на кнопку "Language"
   expected-result: |
     У пользователя должна корректно отобразиться иконка английской локализации в виде флага
   actual-result: |
     Отсутствует иконка в виде флага в английской локализации
 
-    - summary: |
-    Некорректное отображение интерфейса мобильной версии интернет-магазина
+- summary: |
+    Не реализована мобильная версия сайта
   environment: |
     created by Hexlet version 1, Google Chrome Версия 121.0.6167.140, (64 бит) Windows 10
   steps-to-reproduce: |
-    - Зайти на сайт интернет-магазина https://hexlet-products-store.vercel.app/
     - Через DevTools сэмулировать iPhone 14 pro max
   expected-result: |
     У пользователя должны корректно отображаться элементы 
