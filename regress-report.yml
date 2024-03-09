@@ -87,7 +87,7 @@ bugreports:
       created by Hexlet version 2, Google Chrome Версия 121.0.6167.140, (64 бит) Windows 10
     steps-to-reproduce: |
       - В блоке 'Brand' выбрать 'OPPO'
-      expected-result: |
+    expected-result: |
       Цена и кнопка 'Add to cart' не выходят за границы карточки товара, карточка товара отображается единнобразно
     actual-result: |
       Цена и кнопка 'Add to cart' выходят за границы карточки товара, карточка товара смещена
