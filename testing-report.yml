@@ -1,51 +1,51 @@
 ---
 - summary: |
   Поиск товара по ключевому слову
-status: pass
+  status: pass
   
 - summary: |
   Поиск товара от одного символа
-status: pass
+  status: pass
 
 - summary: |
   Поиск товара по категориям
-status: pass
+  status: pass
 
 - summary: |
   Сортировка товара по цене
-status: pass
+  status: pass
 
 - summary: |
   Фильтрация товара по бренду
-status: pass
+  status: pass
 
 - summary: |
   Проверка отображения всех товаров в каталоге
-status: fail
+  status: fail
 
 - summary: |
   Просмотр подробной информации о товаре в карточке
-status: pass
+  status: pass
 
 - summary: |
   Возможность просматривать список товаров
-status: pass
+  status: pass
 
 - summary: |
   Добавление и просмотр товара в корзине
-status: pass
+  status: pass
 
 - summary: |
   Удаление товара из корзины
-status: pass
+  status: pass
 
 - summary: |
   Проверка отображения мобильной версии сайта
-status: fail
+  status: fail
 
 - summary: |
   Проверка локализации
-status: pass
+  status: pass
 
 - summary: |
   Отображение иконки английской локализации в выпадающем меню смены языка
